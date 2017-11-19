@@ -112,9 +112,10 @@ function mostrar_todos(elemento_DOM) {
 	} 
 }
 
-function factorial(n){
-  if ((n == 0) || (n == 1))
-    return 1;
-  else
-    return (n * factorial(n - 1));
+function map(f,a) {
+  var result = [], // Crea un nuevo Array
+      i;
+  for (i = 0; i != a.length; i++)
+    result[i] = f(a[i]);
+  return result;
 }
