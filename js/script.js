@@ -112,10 +112,12 @@ function mostrar_todos(elemento_DOM) {
 	} 
 }
 
-function map(f,a) {
-  var result = [], // Crea un nuevo Array
-      i;
-  for (i = 0; i != a.length; i++)
-    result[i] = f(a[i]);
-  return result;
+function A(x) {
+   function B(y) {
+      function C(z) {
+         alert(x + y + z);
+      }
+      C(3);
+   }
+   B(2);
 }
