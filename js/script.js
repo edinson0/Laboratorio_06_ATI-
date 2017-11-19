@@ -111,3 +111,10 @@ function mostrar_todos(elemento_DOM) {
 		element.childNodes[3].style.display= 'none';
 	} 
 }
+
+function factorial(n){
+  if ((n == 0) || (n == 1))
+    return 1;
+  else
+    return (n * factorial(n - 1));
+}
